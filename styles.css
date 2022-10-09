@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@500&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+.navbar{
+    background: linear-gradient(rgba(0,0,0,0.5),#265858);
+    display: flex;
+    color: rgb(247, 251, 253);
+    height: 53px;
+    position: fixed;
+    width: 100%;
+}
+
+.name{
+   padding:10px;
+   font-size: 28px;
+   font-family: 'Commissioner', sans-serif;
+   
+}
+
+.contents{
+    text-align: right;
+    margin: auto;
+   
+ 
+}
+
+
+
+.contents ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    justify-content: space-between;
+    margin-left: 64px;
+
+}
+
+.contents ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+.contents ul li a:hover::after{
+    width: 100%;
+
+}
+.contents ul li a:after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: aqua;    
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+ 
+}
+
+.container{
+    display: flex;
+   
+    /*background-image: url(Home.webp);*/
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  
+}
+
+.info h1{
+    font-family:'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #e8f2f5;
+}
+
+.slide-left{
+    animation: transitionIn 4s ease-out 0.5s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.info p{
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;    
+    color: #e8f2f5;
+
+}
+
+.info{
+    width:53%;
+    text-align: center;
+    justify-content: center ;
+    margin-top: 20%;
+    font-family: 'Commissioner', sans-serif;
+}
+
+.profilepic{
+    clip-path: circle();
+    margin-top: 6%; 
+    animation: transitionIn 4s ease-in-out 0.5s forwards;   
+}
+
+/*---------------------------------------------------------About-----------------------------------------------------*/
+
+.sub-title1{
+    font-family:'Montserrat', sans-serif;
+    padding-top: 67px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    color: rgb(241, 236, 236);
+    /*background: linear-gradient(rgba(0,0,0,0.5),#009688);*/
+}
+
+.about{
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    height: 100vh;
+    color: white;
+}
+    
+
+
+
+
+.about-info p{
+  
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.0;
+    justify-content: center;
+    /*margin-top: 58px;*/
+    /*background: linear-gradient(rgba(0,0,0,0.5),#009688);*/
+}
+
+/*----------------------------Projects------------------------------*/
+
+#projects{
+    padding: 50px 0;
+    background-image: url("https://wallpaperaccess.com/full/5651982.jpg");
+    /*margin-top: 20%;*/
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.sub-title{
+    font-family:'Montserrat', sans-serif;
+    padding-top: 67px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    color: rgb(237, 227, 227);
+    
+}
+
+.projects-list div{
+    font-family:'Montserrat', sans-serif;
+    background: #e8f2f5;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius:10px;
+    transition:background 0.5s,transform 0.5s;
+    
+}
+
+.projects-list div p{
+    font-family:'Montserrat', sans-serif;
+}
+
+.projects-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+
+.projects-list div h2{
+    font-family:'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.projects-list div:hover{
+    background:linear-gradient(rgba(0,0,0,0.5),#009688);;
+    transform: translateY(-10px);
+}
+
+/*---------------------------Certifications---------------------------------------------------------*/
+
+#certifications{
+    padding: 50px 0;
+    background-color: #08978b;
+}
+
+.certification-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.certification{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.certification img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    border: 5px solid rgb(16, 16, 16);
+
+}
+
+/*-----------------------------------------------Skills--------------------------------------------------*/
+#skills{
+    padding: 50px 0;
+    background:linear-gradient(rgba(0,0,0,0.5),#009688) ;
+    height: 100vh;
+}
+
+.skills{
+    display: flex;
+}
+
+.skill{
+   
+    height: 22px;
+    background-color: blue;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.skill-list{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 12px;
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.skill-item{
+
+    align-items: center;
+    font-weight: 600;
+   padding: 20px;
+}
+
+
+
+
+.fifty{
+    width: 350px;
+}
+
+.t5{
+    width: 125px;
+}
+
+.box1{
+    width: 50%;
+}
+
+.box2{
+    flex-basis: 50%;
+}
+/*-------------------------------------------Contact----------------------------------------------------------------*/
+#contact{
+    background: linear-gradient(rgb(255, 253, 253),grey,rgb(6, 6, 6));
+}
+.row{
+    display: flex;
+}
+
+
+.contact-left{
+    flex-basis: 35%;
+
+}
+
+
+.contact-right{
+    flex-basis: 60%;
+    padding: 5%;
+    
+}
+
+.contact-left p{
+    margin-top: 30px;
+
+}
+
+.contact-left p i{
+    color:#0c0d0f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+    
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #09090b;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: rgb(104, 113, 116);
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #101010;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #e7e7f5;
+    background: #040506;
+    display: inline-block;
+   
+
+}
+
+.btn:hover{
+    background: rgb(128, 132, 134)
+}
+
+.contact-right form{
+    width: 70%;
+    margin: auto;
+    padding-left: 20px;
+    text-align: center;
+    justify-content: right;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #949696;
+    padding: 15px;
+    margin: 15px 0;
+    color: rgba(8, 8, 8, 0.859);
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+form.btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.sub-title2{
+    font-family:'Montserrat', sans-serif;
+    padding-top: 67px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+}
+  
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #0f0f10;
+    font-weight: 300;
+    color: white;
+   
+}
+
+.copyright i{
+    color: rgb(237, 234, 234);
+}
+
+
+#msg{
+    color: #61b752;
+    margin-top: -20px;
+    display: block;
+    text-align: center;
+}
